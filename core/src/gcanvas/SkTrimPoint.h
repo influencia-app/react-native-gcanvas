@@ -1,6 +1,11 @@
 /*
  * SkTrimPoint.h — SkPoint/SkVector types (project code, NOT Skia code).
  * Mirrors include/core/SkPoint.h for the symbols used here.
+ *
+ * Copyright 2006 The Android Open Source Project
+ *
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
  */
 #ifndef SKTRIM_POINT_H
 #define SKTRIM_POINT_H
@@ -10,12 +15,13 @@
 typedef float SkScalar;
 
 #define SK_Scalar1          1.0f
-#define SK_ScalarNearlyZero 1e-6f
 #define SK_ScalarHalf       0.5f
+#define SK_ScalarRoot2Over2 0.707106781f
+#define SK_ScalarNearlyZero (SK_Scalar1 / (1 << 12))
 
-inline float SkScalarAbs(float x) { return x >= 0 ? x : -x; }
-inline float SkScalarSqrt(float x) { return sqrtf(x); }
-inline float SkScalarInvert(float x) { return 1.0f / x; }
+inline float SkScalarAbs(float x) { return std::fabs(x); }
+inline float SkScalarSqrt(float x) { return std::sqrt(x); }
+inline float SkScalarInvert(float x) { return (SK_Scalar1 / (x)); }
 inline bool SkIsNaN(float x) { return x != x; }
 inline bool SkIsFinite(float x) { return x == x; }
 #define SkASSERT(cond) ((void)0)

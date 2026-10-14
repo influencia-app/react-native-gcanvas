@@ -1,6 +1,11 @@
 /*
  * SkTrimMatrix.h — 2D affine matrix (project code, NOT Skia code).
  * Mirrors include/core/SkMatrix.h for the symbols used here.
+ *
+ * Copyright 2006 The Android Open Source Project
+ *
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
  */
 #ifndef SKTRIM_MATRIX_H
 #define SKTRIM_MATRIX_H

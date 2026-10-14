@@ -2,6 +2,12 @@
  * SkTrimPathTypes.h — path/shape types (project code, NOT Skia code).
  * Mirrors include/core/SkPathTypes.h, SkRRect.h (predicates) and
  * src/core/SkPathMakers.h (iterators) for the symbols used here.
+ *
+ * Copyright 2012 Google Inc.
+ * Copyright 2019 Google LLC
+ *
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
  */
 #ifndef SKTRIM_PATHTYPES_H
 #define SKTRIM_PATHTYPES_H
