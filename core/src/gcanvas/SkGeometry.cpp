@@ -6,6 +6,11 @@
  */
 
 #include "SkTrimGeometry.h"
+#include "SkTrimPoint.h"
+
+#ifndef SK_ScalarRoot2Over2
+#define SK_ScalarRoot2Over2 0.707106781f
+#endif
 
 #include <cmath>
 
