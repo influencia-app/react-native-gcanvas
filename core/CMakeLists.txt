@@ -47,6 +47,9 @@ set(SRC_FILES
         ./src/gcanvas/GFrameBufferObject.cpp
         ./src/gcanvas/GGlyphCache.cpp
         ./src/gcanvas/GPath.cpp
+        ./src/gcanvas/SkGeometry.cpp
+        ./src/gcanvas/SkPathRawShapes.cpp
+        ./src/gcanvas/SkiaEllipseJni.cpp
         ./src/gcanvas/GShader.cpp
         ./src/gcanvas/GShaderManager.cpp
         ./src/gcanvas/GStrSeparator.cpp

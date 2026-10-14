@@ -11,7 +11,7 @@
 #include <cmath>
 #include <cstdio>
 
-#include "SkiaTrimShim.h"
+#include "SkTrimGeometry.h"
 
 namespace {
 

@@ -5,7 +5,7 @@
  * found in the LICENSE file.
  */
 
-#include "SkiaTrimShim.h"
+#include "SkTrimGeometry.h"
 
 #include <cmath>
 
