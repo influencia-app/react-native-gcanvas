@@ -13,6 +13,7 @@
 #define SKTRIM_PATHTYPES_H
 
 #include <cstddef>
+#include <cstdint>
 
 #include "SkTrimPoint.h"
 
@@ -88,15 +89,13 @@ struct SkRRect {
 };
 
 struct SkPathRaw {
-    SkPoint fStorage[16];
-    float fConicStorage[8];
-    SkSpan<SkPoint> fPoints;
+    SkSpan<const SkPoint> fPoints;
     SkSpan<const SkPathVerb> fVerbs;
     SkSpan<const float> fConics;
     SkRect fBounds;
     SkPathFillType fFillType;
     SkPathConvexity fConvexity;
-    unsigned char fSegmentMask;
+    uint8_t fSegmentMask;
 };
 
 template <unsigned N>
