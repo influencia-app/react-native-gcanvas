@@ -161,4 +161,24 @@ public:
     }
 };
 
+namespace SkPathRawShapes {
+
+struct Oval : public SkPathRaw {
+    SkPoint fStorage[9];
+
+    explicit Oval(const SkRect&, SkPathDirection = SkPathDirection::kCW, unsigned index = 1);
+};
+
+struct RRect : public SkPathRaw {
+    SkPoint fStorage[13];
+
+    RRect(const SkRRect&, SkPathDirection dir, unsigned index);
+};
+
+struct Triangle : public SkPathRaw {
+    Triangle(SkSpan<const SkPoint> threePoints, const SkRect& bounds);
+};
+
+}  // namespace SkPathRawShapes
+
 #endif /* SKTRIM_PATHTYPES_H */
