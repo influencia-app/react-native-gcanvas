@@ -16,7 +16,7 @@
 
 #include "SkTrimPoint.h"
 
-enum SkPathFillType { kWinding = 0, kEvenOdd = 1, kInverseWinding = 2, kInverseEvenOdd = 3 };
+enum SkPathFillType { kWinding = 0, kEvenOdd = 1, kInverseWinding = 2, kInverseEvenOdd = 3, kDefault = kWinding };
 enum SkPathVerb { kMove = 0, kLine = 1, kQuad = 2, kConic = 3, kCubic = 4, kClose = 5 };
 enum SkPathConvexity { kConvex_CW = 0, kConvex_CCW = 1, kConvex_Degenerate = 2 };
 enum SkPathDirection { kCW = 0, kCCW = 1 };
